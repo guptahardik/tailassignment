@@ -2,8 +2,8 @@ import random
 import pandas as pd
 
 # Parameters
-x = 10  # Number of airports
-y = 2  # Number of aircraft
+x = 8  # Number of airports
+y = 3  # Number of aircraft
 routes = []
 
 # Generate sample data for routes
