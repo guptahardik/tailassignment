@@ -14,7 +14,7 @@ def yen_algorithm(graph, source, target, k):
     A.append(nx.shortest_path(graph, source=source, target=target, weight='weight'))
 
     for kth in range(1, k):
-        for i in range(len(A[-1]) - 1):
+        for i in range(len(A[-1]) - 1): 
             spur_node = A[-1][i]
             root_path = A[-1][:i + 1]
 
