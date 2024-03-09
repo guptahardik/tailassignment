@@ -43,14 +43,14 @@ def yen_algorithm(graph, source, target, k):
 
 # Create a directed graph
 with open('/Users/robmailley/Documents/103Final/data/flights.pkl', 'rb') as f:
-    flight_list = pickle.load(f)
+    flights_fare = pickle.load(f)
 
-
+graph = nx.DiGraph()
 graph.add_weighted_edges_from(flight_list)
 
 # Define source and target nodes
-source = 'PVU'
-target = 'LAS'
+source = 'BDL'
+target = 'PVU'
 
 # Number of shortest paths to find
 k = 2
